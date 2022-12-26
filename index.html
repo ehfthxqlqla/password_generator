@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>비밀번호 자동생성기</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <h3 class="result-text">생성 결과 : 아래 생성 버튼을 눌러 생성하세요.</h3>
+        </div>
+        <div class="options">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="alphabet">
+                <label class="form-check-label" for="alphabet">맨 앞에 알파벳 추가</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="clipboard" checked>
+                <label class="form-check-label" for="clipboard">생성 후 복사 여부 묻기</label>
+            </div>
+            <span>비밀번호 길이 (기본 8, 알파벳 길이 미포함)</span>
+            <input type="number" class="pw-length form-control" value="8">
+            <button class="btn btn-primary">생성</button>
+        </div>
+
+        <i>* 위 비밀번호는 브라우저 내부에서만 단순 생성하는 것으로, 절대 다른 곳에 저장되지 않습니다.</i>
+        <br>
+        <i>* 비밀번호 저장 기능은 제공되지 않으니 이 비밀번호를 사용하실 계획이 있다면 무조건 메모해주세요.</i>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
