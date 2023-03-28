@@ -109,7 +109,7 @@ window.onload = () => {
     if ( !(sha256(prompt) == entrancePassword) ) {
         alert(`비밀번호가 맞지 않습니다.`)
         window.location.reload()
-    } else if (prompt === null) {
+    } else if (!prompt) {
         alert(`비밀번호를 입력해 주세요!`)
         window.location.reload()
     }
