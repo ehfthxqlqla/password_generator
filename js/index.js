@@ -6,6 +6,10 @@ len = document.querySelector("body > div > div.options > input"),
 resultText = document.querySelector(".result-text"),
 resultInput = document.querySelector(".result-input"),
 lastpwInput = document.querySelector(".last-password"),sha256 = (ascii) => {
+    if (!ascii) {
+        return;
+    }
+    
     function rightRotate(value, amount) {
         return (value>>>amount) | (value<<(32 - amount));
     };
